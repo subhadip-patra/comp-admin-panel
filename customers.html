@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Customer Section</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Admin Panel Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .admin-panel {
+            width: 80%;
+            margin: 2rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            color: #4CAF50; /* Green color */
+        }
+
+        /* Table Styling */
+        .customer-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .customer-table th,
+        .customer-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .customer-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .customer-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-panel">
+        <header>
+            <h1>Customer Section</h1>
+        </header>
+        <div class="customer-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>+1234567890</td>
+                        <td><button class="btn">Edit</button> <button class="btn">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>janesmith@example.com</td>
+                        <td>+0987654321</td>
+                        <td><button class="btn">Edit</button> <button class="btn">Delete</button></td>
+                    </tr>
+                    <!-- More customer rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
